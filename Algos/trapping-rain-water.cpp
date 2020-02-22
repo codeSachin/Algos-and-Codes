@@ -29,7 +29,10 @@ public:
                     rightMax = h[k];
                 }
             }
-            //here we will have leftMax and Rightmax, so take min of them and that will be our overflowValue and add sum+= overflowValue - current cell's height;
+            //here we will have leftMax and Rightmax, so take min of them 
+            //min is taken because that will be responsible for maximum water to be stored, anything more than that will overflow
+            //so we take min(leftMax, rightMax)
+            //and that will be our overflowValue and add sum += overflowValue - current cell's height;
             //and we have to do this for each and every cell element of the array
             int overflowValue = min(leftMax, rightMax);
             sum += overflowValue - h[i];
