@@ -1,3 +1,7 @@
+//  https://leetcode.com/problems/sort-colors/
+//  https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+//  https://www.youtube.com/watch?v=BOt1DAvR0zI&t=35s
+
 #include <iostream>
 #include <vector>
 using namespace std;
